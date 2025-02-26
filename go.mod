@@ -1,4 +1,4 @@
-module github.com/openshift/assisted-image-service
+module github.com/veera-damisetti/assisted-image-service
 
 go 1.21
 
