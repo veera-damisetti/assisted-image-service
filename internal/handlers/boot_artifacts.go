@@ -32,11 +32,7 @@ func parseArtifact(path, arch string) (string, error) {
 	case "rootfs":
 		artifact = "rootfs.img"
 	case "kernel":
-		if arch == "s390x" {
-			artifact = "kernel.img"
-		} else {
-			artifact = "vmlinuz"
-		}
+                artifact = "vmlinuz"
 	case "ins-file":
 		if arch == "s390x" {
 			artifact = "generic.ins"
