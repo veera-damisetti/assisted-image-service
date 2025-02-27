@@ -66,6 +66,7 @@ func (b *BootArtifactsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)
 	}
 
 	isoFileName := b.ImageStore.PathForParams(imagestore.ImageTypeFull, version, arch)
+        fmt.Println("ISO file name for debug", isoFileName)
 	file_path := fmt.Sprintf("/images/pxeboot/%s", artifact)
 	if artifact == "generic.ins" {
 		// s390x only, unlike other artifacts this one is at the root of the ISO
